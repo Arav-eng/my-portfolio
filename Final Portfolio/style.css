@@ -1,0 +1,415 @@
+/* =========================================================
+   1. UNIVERSAL SELECTOR & BOX MODEL RESET
+   ========================================================= */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =========================================================
+   2. BODY & GRID BACKGROUND (HEX, RGB, RGBA COLOR MODELS)
+   ========================================================= */
+body {
+    background-color: #f8f0f5;
+    /* Subtle grid pattern matching the reference portfolio */
+    background-image: 
+        linear-gradient(rgba(142, 36, 87, 0.05) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(142, 36, 87, 0.05) 1px, transparent 1px);
+    background-size: 30px 30px;
+    background-attachment: fixed;
+    color: rgb(45, 35, 46);
+    line-height: 1.6;
+}
+
+/* =========================================================
+   3. TOP NAVIGATION HEADER
+   ========================================================= */
+#top-header {
+    background-color: #ffffff;
+    padding: 15px 40px;
+    border-bottom: 2px solid rgba(142, 36, 87, 0.15);
+    text-align: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+    color: #88134b;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.nav-links a {
+    color: rgb(75, 55, 70);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px 12px;
+    padding: 6px 12px;
+}
+
+.nav-links .nav-btn {
+    background-color: #88134b;
+    color: #ffffff;
+    border-radius: 6px;
+}
+
+/* =========================================================
+   4. HERO SECTION (TEXT PROPERTIES, FONT WEIGHT, BOX MODEL)
+   ========================================================= */
+#hero {
+    text-align: center;
+    padding: 50px 20px 40px 20px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(120, 95, 110);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+#main-heading {
+    font-size: 46px;
+    font-weight: 700;
+    color: #701a45;
+    line-height: 1.2;
+    margin-bottom: 12px;
+}
+
+.role {
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(65, 50, 60);
+    margin-bottom: 14px;
+}
+
+.hero-desc {
+    font-size: 15px;
+    color: rgb(100, 85, 95);
+    max-width: 620px;
+    margin: 0 auto 25px auto;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    margin-bottom: 35px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #88134b;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 22px;
+    margin: 5px 8px;
+    border: 2px solid #88134b;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.btn-secondary {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #88134b;
+    text-decoration: none;
+    padding: 10px 22px;
+    margin: 5px 8px;
+    border: 2px solid rgba(136, 19, 75, 0.35);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Profile Photo Box & Floating Badges */
+#profile-container {
+    width: 240px;
+    margin: 15px auto 0 auto;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.75);
+    border: 2px solid rgba(136, 19, 75, 0.2);
+    border-radius: 20px;
+}
+
+#profile-img {
+    height: 190px;
+    width: 170px;
+    border-radius: 16px;
+    border: 3px solid #88134b;
+    background-color: #ffffff;
+}
+
+.floating-badge {
+    display: inline-block;
+    background-color: #ffffff;
+    color: #701a45;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 14px;
+    margin: 6px 0px;
+    border: 1px solid rgba(136, 19, 75, 0.25);
+    border-radius: 20px;
+}
+
+/* =========================================================
+   5. MAIN CONTAINER & SECTION CARDS (BORDER, PADDING, MARGIN)
+   ========================================================= */
+#main-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 20px 40px 20px;
+}
+
+.card-section {
+    background-color: #ffffff;
+    margin: 25px 0px;
+    padding: 35px 30px;
+    border: 2px solid rgba(136, 19, 75, 0.15);
+    border-radius: 16px;
+    text-align: center;
+}
+
+/* Section Headings using text-decoration properties from class */
+.section-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #701a45;
+    margin-bottom: 22px;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-color: #88134b;
+}
+
+/* =========================================================
+   6. ABOUT ME & INFO BOXES
+   ========================================================= */
+.about-text {
+    font-size: 15px;
+    color: rgb(80, 65, 75);
+    max-width: 720px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+}
+
+.about-text i {
+    font-style: italic;
+}
+
+.info-grid {
+    text-align: center;
+}
+
+.info-box {
+    display: inline-block;
+    width: 360px;
+    background-color: #fdf6f9;
+    margin: 8px;
+    padding: 12px 16px;
+    border: 1px solid rgba(136, 19, 75, 0.25);
+    border-radius: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: rgb(55, 40, 50);
+}
+
+.icon-box {
+    color: #88134b;
+    font-size: 20px;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+.icon-sm {
+    font-size: 18px;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+/* =========================================================
+   7. SKILLS & HOBBIES PILLS
+   ========================================================= */
+.sub-heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(95, 70, 85);
+    margin: 18px 0px 10px 0px;
+    text-transform: capitalize;
+}
+
+.badge-container {
+    margin-bottom: 10px;
+}
+
+.skill-pill {
+    display: inline-block;
+    background-color: #fdf6f9;
+    color: #701a45;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 6px;
+    padding: 10px 20px;
+    border: 1px solid rgba(136, 19, 75, 0.3);
+    border-radius: 10px;
+}
+
+/* =========================================================
+   8. EDUCATION CARDS
+   ========================================================= */
+.edu-grid {
+    text-align: center;
+}
+
+.edu-card {
+    display: inline-block;
+    width: 360px;
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 14px;
+    border: 1px solid rgba(136, 19, 75, 0.25);
+    border-radius: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.edu-icon-banner {
+    height: 95px;
+    background-color: #f9e6ef;
+    border-radius: 8px;
+    text-align: center;
+    padding-top: 28px;
+    margin-bottom: 12px;
+}
+
+.edu-icon {
+    font-size: 38px;
+    color: #88134b;
+}
+
+.edu-details h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(45, 30, 40);
+    margin-bottom: 4px;
+}
+
+.edu-details p {
+    font-size: 13px;
+    color: rgb(100, 85, 95);
+}
+
+.edu-note {
+    font-style: italic;
+    color: #88134b;
+    margin-top: 4px;
+}
+
+/* =========================================================
+   9. MARKSHEETS & CERTIFICATES BOXES
+   ========================================================= */
+.doc-group {
+    background-color: #fdf6f9;
+    margin: 18px 0px;
+    padding: 20px;
+    border: 1px solid rgba(136, 19, 75, 0.25);
+    border-radius: 12px;
+    text-align: left;
+}
+
+.doc-group-title {
+    font-size: 17px;
+    font-weight: 700;
+    color: #701a45;
+    margin-bottom: 14px;
+}
+
+.doc-item {
+    background-color: #ffffff;
+    margin: 12px 0px;
+    padding: 15px 18px;
+    border: 1px solid rgba(136, 19, 75, 0.2);
+    border-radius: 10px;
+}
+
+.doc-tag {
+    display: inline-block;
+    background-color: #f9e6ef;
+    color: #88134b;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 6px;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.doc-item h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(45, 35, 46);
+    margin-bottom: 4px;
+}
+
+.doc-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: #88134b;
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+/* =========================================================
+   10. CONTACT & FOOTER
+   ========================================================= */
+.contact-line {
+    font-size: 15px;
+    margin: 8px 0px;
+    color: rgb(65, 50, 60);
+}
+
+.contact-line a {
+    color: #88134b;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+#main-footer {
+    background-color: rgb(42, 24, 35);
+    color: #ffffff;
+    text-align: center;
+    padding: 18px;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* =========================================================
+   11. FALLBACK STYLING FOR TABLES (IF USING ORIGINAL HTML)
+   ========================================================= */
+table {
+    width: 100%;
+    margin: 15px auto;
+    border: 2px solid #88134b;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+th {
+    background-color: #88134b;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgba(136, 19, 75, 0.2);
+}
+
+hr {
+    visibility: hidden;
+}
